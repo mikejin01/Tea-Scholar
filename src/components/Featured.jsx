@@ -21,34 +21,33 @@ export default function Featured() {
           {FEATURED.map((item) => (
             <div
               key={item.name}
-              className="bg-white dark:bg-surface-dark rounded overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100 dark:border-gray-800"
+              className="group relative aspect-[4/5] rounded-3xl overflow-hidden shadow-md hover:shadow-2xl ring-1 ring-black/5 dark:ring-white/10 transition-all duration-300"
             >
-              <div className="aspect-[4/5] overflow-hidden relative">
-                <img
-                  alt={item.name}
-                  className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500"
-                  src={item.image}
-                />
-              </div>
-              <div className="p-4 sm:p-6">
-                <h3 className="text-base sm:text-lg font-bold text-gray-900 dark:text-white mb-1 sm:mb-2">
+              <img
+                alt={item.name}
+                className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-110"
+                src={item.image}
+              />
+              {/* Legibility gradient + subtle hover tint */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent" />
+
+              {/* Floating add-to-cart button */}
+              <button
+                type="button"
+                className="absolute top-3 right-3 grid place-items-center h-10 w-10 rounded-full bg-white/95 text-primary shadow-lg backdrop-blur-sm transition-all duration-300 hover:bg-primary hover:text-white hover:scale-110 active:scale-95"
+                aria-label={`Add ${item.name} to cart`}
+              >
+                <Icon name="add" className="text-2xl" />
+              </button>
+
+              {/* Title + price overlaid on the image */}
+              <div className="absolute inset-x-0 bottom-0 p-4 sm:p-5">
+                <h3 className="text-white font-bold text-sm sm:text-lg leading-snug drop-shadow-sm">
                   {item.name}
                 </h3>
-                <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 mb-3 sm:mb-4 line-clamp-2">
-                  {item.description}
-                </p>
-                <div className="flex justify-between items-center">
-                  <span className="text-base sm:text-lg font-semibold text-primary">
-                    {item.price}
-                  </span>
-                  <button
-                    type="button"
-                    className="text-primary hover:text-opacity-80 transition-colors p-2 rounded-full hover:bg-primary/10"
-                    aria-label={`Add ${item.name} to cart`}
-                  >
-                    <Icon name="add_shopping_cart" className="text-xl" />
-                  </button>
-                </div>
+                <span className="mt-1 inline-block text-white/95 font-semibold text-sm sm:text-base">
+                  {item.price}
+                </span>
               </div>
             </div>
           ))}

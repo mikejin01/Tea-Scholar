@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { LOGO } from "../assets.js";
+import { ICON } from "../assets.js";
 import { useTheme } from "../useTheme.js";
 import Icon from "./Icon.jsx";
 
@@ -26,13 +26,16 @@ export default function Header() {
   return (
     <header className="bg-white dark:bg-surface-dark border-b border-gray-100 dark:border-gray-800 sticky top-0 z-50 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 sm:h-20 items-center">
-          <div className="flex-shrink-0 flex items-center">
-            <a className="flex items-center gap-2" href="#home">
-              <img alt="Tea Scholar Logo" className="h-10 sm:h-12 w-auto" src={LOGO} />
+        <div className="grid grid-cols-[1fr_auto_1fr] h-16 sm:h-20 items-center">
+          <div className="flex items-center">
+            <a className="flex items-center gap-2.5" href="#home">
+              <img alt="Tea Scholar" className="h-9 sm:h-11 w-auto" src={ICON} />
+              <span className="font-display text-xl sm:text-2xl font-semibold tracking-wide text-gray-900 dark:text-white leading-none">
+                Tea Scholar
+              </span>
             </a>
           </div>
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex justify-self-center space-x-8">
             {NAV_LINKS.map((link) => (
               <a
                 key={link.label}
@@ -45,7 +48,7 @@ export default function Header() {
               </a>
             ))}
           </nav>
-          <div className="flex items-center gap-1 sm:gap-4">
+          <div className="flex items-center gap-1 sm:gap-4 justify-self-end">
             <button
               className="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-primary rounded-full text-sm p-2.5 transition-colors"
               id="theme-toggle"

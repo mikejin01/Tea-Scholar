@@ -1,4 +1,4 @@
-import { LOGO } from "../assets.js";
+import { ICON } from "../assets.js";
 
 const SHOP_LINKS = ["Full Menu", "Seasonal Specials", "Merchandise", "Gift Cards"];
 const COMPANY_LINKS = ["Our Story", "Careers", "Franchise Inquiries", "Contact Us"];
@@ -31,11 +31,12 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 lg:gap-8">
           <div className="col-span-1 md:col-span-1">
-            <img
-              alt="Tea Scholar Logo"
-              className="h-10 w-auto mb-6 hover:grayscale-0 transition-all duration-300"
-              src={LOGO}
-            />
+            <div className="flex items-center gap-2.5 mb-6">
+              <img alt="Tea Scholar" className="h-10 w-auto" src={ICON} />
+              <span className="font-display text-2xl font-semibold tracking-wide text-gray-900 dark:text-white leading-none">
+                Tea Scholar
+              </span>
+            </div>
             <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">
               Elevating the boba tea experience through scholarly dedication to craft, quality, and
               community.

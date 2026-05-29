@@ -3,6 +3,7 @@
 export const asset = (file) => `${import.meta.env.BASE_URL}${file}`;
 
 export const LOGO = asset("tea_scholar_logo_clear_background_tight.png");
+export const ICON = asset("tea_scholar_icon.png");
 export const HERO = asset("Hero.webp");
 
 export const FEATURED = [

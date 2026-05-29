@@ -6,7 +6,7 @@ const COMPANY_LINKS = ["Our Story", "Careers", "Franchise Inquiries", "Contact U
 function LinkColumn({ title, links }) {
   return (
     <div>
-      <h3 className="text-sm font-semibold text-gray-900 dark:text-white tracking-wider uppercase mb-4">
+      <h3 className="font-sans text-sm font-semibold text-gray-900 dark:text-white tracking-wider uppercase mb-4">
         {title}
       </h3>
       <ul className="space-y-3">
@@ -34,7 +34,7 @@ export default function Footer() {
             <div className="flex items-center gap-2.5 mb-6">
               <img alt="Tea Scholar" className="h-14 w-auto" src={ICON} />
               <span className="flex flex-col justify-center">
-                <span className="font-display text-2xl font-semibold tracking-wide leading-none text-gray-900 dark:text-white">
+                <span className="font-display text-2xl tracking-wide leading-none text-gray-900 dark:text-white">
                   Tea Scholar
                 </span>
                 <span className="font-serif text-xs font-medium tracking-[0.3em] leading-none text-primary mt-1">
@@ -50,7 +50,7 @@ export default function Footer() {
           <LinkColumn title="Shop" links={SHOP_LINKS} />
           <LinkColumn title="Company" links={COMPANY_LINKS} />
           <div>
-            <h3 className="text-sm font-semibold text-gray-900 dark:text-white tracking-wider uppercase mb-4">
+            <h3 className="font-sans text-sm font-semibold text-gray-900 dark:text-white tracking-wider uppercase mb-4">
               Stay Updated
             </h3>
             <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">

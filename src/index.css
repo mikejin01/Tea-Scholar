@@ -3,14 +3,15 @@
 @tailwind utilities;
 
 body {
-  font-family: "Noto Serif SC", "Noto Serif TC", Georgia, serif;
+  font-family: "Public Sans", "Noto Serif TC", "Noto Serif SC", system-ui, sans-serif;
 }
 
-/* Headings carry the elegant display serif by default */
+/* Headings carry the high-contrast Didone display serif (Vidaloka, 400 only) */
 h1,
 h2,
 h3 {
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "Vidaloka", "Noto Serif TC", "Noto Serif SC", Georgia, serif;
+  font-weight: 400;
 }
 
 .hero-slide {

@@ -15,11 +15,12 @@ export default {
         "surface-dark": "#1e1e1e",
       },
       fontFamily: {
-        // Elegant calligraphic serif for headings (imperial / scholarly feel)
-        display: ['"Cormorant Garamond"', "Georgia", "serif"],
-        // Classical Song/Ming-style serif for body + Chinese characters
-        // (TC covers traditional glyphs like 狀; SC covers the rest + Latin)
-        serif: ['"Noto Serif SC"', '"Noto Serif TC"', "Georgia", "serif"],
+        // Clean neutral sans for body/UI (Gong Cha style); CJK falls back to Noto Serif
+        sans: ['"Public Sans"', '"Noto Serif TC"', '"Noto Serif SC"', "system-ui", "sans-serif"],
+        // High-contrast Didone serif for display headings (Gong Cha style)
+        display: ['"Vidaloka"', '"Noto Serif TC"', '"Noto Serif SC"', "Georgia", "serif"],
+        // Classical Song/Ming serif for Chinese brand text (TC covers 狀, 靜)
+        serif: ['"Noto Serif TC"', '"Noto Serif SC"', "Georgia", "serif"],
       },
       borderRadius: {
         DEFAULT: "0.125rem",

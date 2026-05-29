@@ -31,7 +31,7 @@ export default function Header() {
             <a className="flex items-center gap-2.5" href="#home">
               <img alt="Tea Scholar" className="h-11 sm:h-14 w-auto" src={ICON} />
               <span className="flex flex-col justify-center">
-                <span className="font-display text-xl sm:text-2xl font-semibold tracking-wide leading-none text-gray-900 dark:text-white">
+                <span className="font-display text-2xl sm:text-3xl tracking-wide leading-none text-gray-900 dark:text-white">
                   Tea Scholar
                 </span>
                 <span className="font-serif text-[0.6rem] sm:text-xs font-medium tracking-[0.3em] leading-none text-primary mt-1">

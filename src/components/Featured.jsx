@@ -9,10 +9,13 @@ export default function Featured() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10 sm:mb-16">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4">
+          <p className="text-xs sm:text-sm font-serif uppercase tracking-[0.25em] text-primary mb-3">
+            状元茶事 · Tea Scholar
+          </p>
+          <h2 className="text-4xl sm:text-5xl font-semibold tracking-wide text-gray-900 dark:text-white mb-3 sm:mb-4">
             Curated Selections
           </h2>
-          <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg font-light text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             Discover our masterfully blended signatures, highlighting the true essence of premium
             tea leaves.
           </p>
@@ -42,10 +45,10 @@ export default function Featured() {
 
               {/* Title + price overlaid on the image */}
               <div className="absolute inset-x-0 bottom-0 p-4 sm:p-5">
-                <h3 className="text-white font-bold text-sm sm:text-lg leading-snug drop-shadow-sm">
+                <h3 className="text-white font-semibold text-lg sm:text-2xl leading-tight tracking-wide drop-shadow-md">
                   {item.name}
                 </h3>
-                <span className="mt-1 inline-block text-white/95 font-semibold text-sm sm:text-base">
+                <span className="mt-0.5 inline-block font-serif text-white/95 font-medium text-sm sm:text-base">
                   {item.price}
                 </span>
               </div>

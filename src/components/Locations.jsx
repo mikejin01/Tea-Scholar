@@ -16,7 +16,10 @@ export default function Locations() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-surface-light dark:bg-surface-dark rounded-lg p-6 sm:p-8 md:p-12 shadow-sm border border-gray-100 dark:border-gray-800 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
           <div className="flex-1 text-center md:text-left">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-6">
+            <p className="text-xs sm:text-sm font-serif uppercase tracking-[0.25em] text-primary mb-3">
+              静 · Serenity
+            </p>
+            <h2 className="text-3xl sm:text-4xl font-semibold tracking-wide text-gray-900 dark:text-white mb-6">
               Visit Our Sanctuary
             </h2>
             <div className="space-y-6">

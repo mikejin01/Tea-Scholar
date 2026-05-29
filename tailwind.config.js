@@ -15,7 +15,10 @@ export default {
         "surface-dark": "#1e1e1e",
       },
       fontFamily: {
-        display: ["Manrope", "sans-serif"],
+        // Elegant calligraphic serif for headings (imperial / scholarly feel)
+        display: ['"Cormorant Garamond"', "Georgia", "serif"],
+        // Classical Song/Ming-style serif for body + Chinese characters
+        serif: ['"Noto Serif SC"', "Georgia", "serif"],
       },
       borderRadius: {
         DEFAULT: "0.125rem",

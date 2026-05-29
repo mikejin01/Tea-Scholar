@@ -3,7 +3,14 @@
 @tailwind utilities;
 
 body {
-  font-family: "Manrope", sans-serif;
+  font-family: "Noto Serif SC", Georgia, serif;
+}
+
+/* Headings carry the elegant display serif by default */
+h1,
+h2,
+h3 {
+  font-family: "Cormorant Garamond", Georgia, serif;
 }
 
 .hero-slide {

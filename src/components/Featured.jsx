@@ -10,7 +10,7 @@ export default function Featured() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10 sm:mb-16">
           <p className="text-xs sm:text-sm font-serif uppercase tracking-[0.25em] text-primary mb-3">
-            状元茶事 · Tea Scholar
+            狀元茶事 · Tea Scholar
           </p>
           <h2 className="text-4xl sm:text-5xl font-semibold tracking-wide text-gray-900 dark:text-white mb-3 sm:mb-4">
             Curated Selections

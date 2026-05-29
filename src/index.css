@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  font-family: "Noto Serif SC", Georgia, serif;
+  font-family: "Noto Serif SC", "Noto Serif TC", Georgia, serif;
 }
 
 /* Headings carry the elegant display serif by default */

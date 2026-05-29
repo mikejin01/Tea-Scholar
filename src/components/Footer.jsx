@@ -33,8 +33,13 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center gap-2.5 mb-6">
               <img alt="Tea Scholar" className="h-10 w-auto" src={ICON} />
-              <span className="font-display text-2xl font-semibold tracking-wide text-gray-900 dark:text-white leading-none">
-                Tea Scholar
+              <span className="flex flex-col leading-none">
+                <span className="font-display text-2xl font-semibold tracking-wide text-gray-900 dark:text-white">
+                  Tea Scholar
+                </span>
+                <span className="font-serif text-xs font-medium tracking-[0.35em] text-primary mt-1">
+                  狀元茶事
+                </span>
               </span>
             </div>
             <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">

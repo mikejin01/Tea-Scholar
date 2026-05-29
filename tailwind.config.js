@@ -18,7 +18,8 @@ export default {
         // Elegant calligraphic serif for headings (imperial / scholarly feel)
         display: ['"Cormorant Garamond"', "Georgia", "serif"],
         // Classical Song/Ming-style serif for body + Chinese characters
-        serif: ['"Noto Serif SC"', "Georgia", "serif"],
+        // (TC covers traditional glyphs like 狀; SC covers the rest + Latin)
+        serif: ['"Noto Serif SC"', '"Noto Serif TC"', "Georgia", "serif"],
       },
       borderRadius: {
         DEFAULT: "0.125rem",

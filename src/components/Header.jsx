@@ -28,13 +28,13 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-[1fr_auto_1fr] h-16 sm:h-20 items-center">
           <div className="flex items-center">
-            <a className="flex items-center gap-2.5" href="#home">
-              <img alt="Tea Scholar" className="h-11 sm:h-14 w-auto" src={ICON} />
-              <span className="flex flex-col justify-center">
-                <span className="font-display text-2xl sm:text-3xl tracking-wide leading-none text-gray-900 dark:text-white">
+            <a className="flex items-center gap-2" href="#home">
+              <img alt="Tea Scholar" className="h-8 sm:h-9 w-auto" src={ICON} />
+              <span className="flex flex-col items-start justify-center">
+                <span className="font-display text-lg sm:text-xl leading-none text-gray-900 dark:text-white">
                   Tea Scholar
                 </span>
-                <span className="font-serif text-[0.6rem] sm:text-xs font-medium tracking-[0.3em] leading-none text-primary mt-1">
+                <span className="font-serif text-[0.6rem] sm:text-[0.7rem] font-medium tracking-[0.15em] leading-none text-primary mt-1">
                   狀元茶事
                 </span>
               </span>

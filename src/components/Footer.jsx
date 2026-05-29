@@ -31,13 +31,13 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 lg:gap-8">
           <div className="col-span-1 md:col-span-1">
-            <div className="flex items-center gap-2.5 mb-6">
-              <img alt="Tea Scholar" className="h-14 w-auto" src={ICON} />
-              <span className="flex flex-col justify-center">
-                <span className="font-display text-2xl tracking-wide leading-none text-gray-900 dark:text-white">
+            <div className="flex items-center gap-2 mb-6">
+              <img alt="Tea Scholar" className="h-10 w-auto" src={ICON} />
+              <span className="flex flex-col items-start justify-center">
+                <span className="font-display text-xl leading-none text-gray-900 dark:text-white">
                   Tea Scholar
                 </span>
-                <span className="font-serif text-xs font-medium tracking-[0.3em] leading-none text-primary mt-1">
+                <span className="font-serif text-[0.7rem] font-medium tracking-[0.15em] leading-none text-primary mt-1">
                   狀元茶事
                 </span>
               </span>

@@ -45,7 +45,7 @@ export default function Featured() {
 
               {/* Title + price overlaid on the image */}
               <div className="absolute inset-x-0 bottom-0 p-4 sm:p-5">
-                <h3 className="font-display text-white text-xl sm:text-2xl leading-tight drop-shadow-md">
+                <h3 className="font-display text-white text-sm sm:text-base lg:text-lg leading-tight drop-shadow-md">
                   {item.name}
                 </h3>
                 <span className="mt-1 inline-block font-sans text-white/95 font-semibold text-sm sm:text-base drop-shadow">

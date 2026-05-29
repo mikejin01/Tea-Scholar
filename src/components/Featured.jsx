@@ -4,20 +4,20 @@ import Icon from "./Icon.jsx";
 export default function Featured() {
   return (
     <section
-      className="py-24 bg-surface-light dark:bg-background-dark transition-colors duration-300"
+      className="py-16 sm:py-24 bg-surface-light dark:bg-background-dark transition-colors duration-300"
       id="featured"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+        <div className="text-center mb-10 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4">
             Curated Selections
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             Discover our masterfully blended signatures, highlighting the true essence of premium
             tea leaves.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {FEATURED.map((item) => (
             <div
               key={item.name}

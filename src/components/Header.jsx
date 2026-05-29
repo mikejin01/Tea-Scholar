@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { LOGO } from "../assets.js";
 import { useTheme } from "../useTheme.js";
 import Icon from "./Icon.jsx";
@@ -12,14 +13,23 @@ const NAV_LINKS = [
 
 export default function Header() {
   const { toggle } = useTheme();
+  const [open, setOpen] = useState(false);
+
+  // Lock body scroll while the mobile menu is open.
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
 
   return (
     <header className="bg-white dark:bg-surface-dark border-b border-gray-100 dark:border-gray-800 sticky top-0 z-50 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-20 items-center">
+        <div className="flex justify-between h-16 sm:h-20 items-center">
           <div className="flex-shrink-0 flex items-center">
             <a className="flex items-center gap-2" href="#home">
-              <img alt="Tea Scholar Logo" className="h-12 w-auto" src={LOGO} />
+              <img alt="Tea Scholar Logo" className="h-10 sm:h-12 w-auto" src={LOGO} />
             </a>
           </div>
           <nav className="hidden md:flex space-x-8">
@@ -35,7 +45,7 @@ export default function Header() {
               </a>
             ))}
           </nav>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-1 sm:gap-4">
             <button
               className="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-primary rounded-full text-sm p-2.5 transition-colors"
               id="theme-toggle"
@@ -53,14 +63,49 @@ export default function Header() {
               Order Now
             </a>
             <button
-              className="md:hidden text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline-none"
+              className="md:hidden text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-primary rounded-full p-2.5 transition-colors"
               type="button"
-              aria-label="Open menu"
+              aria-label={open ? "Close menu" : "Open menu"}
+              aria-expanded={open}
+              onClick={() => setOpen((v) => !v)}
             >
-              <Icon name="menu" />
+              <Icon name={open ? "close" : "menu"} />
             </button>
           </div>
         </div>
+      </div>
+
+      {/* Mobile menu */}
+      <div
+        className={`md:hidden fixed inset-x-0 top-16 bottom-0 z-40 bg-white dark:bg-surface-dark transition-all duration-300 ${
+          open
+            ? "opacity-100 translate-y-0 pointer-events-auto"
+            : "opacity-0 -translate-y-2 pointer-events-none"
+        }`}
+      >
+        <nav className="flex flex-col px-4 pt-4 pb-8 gap-1">
+          {NAV_LINKS.map((link) => (
+            <a
+              key={link.label}
+              href="#"
+              onClick={() => setOpen(false)}
+              className={`px-3 py-3.5 text-base font-medium rounded transition-colors border-b border-gray-100 dark:border-gray-800 ${
+                link.active
+                  ? "text-gray-900 dark:text-white"
+                  : "text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+              }`}
+            >
+              {link.label}
+            </a>
+          ))}
+          <a
+            href="#"
+            onClick={() => setOpen(false)}
+            className="mt-5 inline-flex items-center justify-center px-5 py-3.5 text-base font-medium rounded text-white bg-primary hover:bg-opacity-90 transition-colors"
+          >
+            Order Now
+          </a>
+        </nav>
       </div>
     </header>
   );

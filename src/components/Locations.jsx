@@ -12,11 +12,11 @@ const DETAILS = [
 
 export default function Locations() {
   return (
-    <section className="py-24 bg-background-light dark:bg-background-dark transition-colors duration-300">
+    <section className="py-16 sm:py-24 bg-background-light dark:bg-background-dark transition-colors duration-300">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-surface-light dark:bg-surface-dark rounded-lg p-8 md:p-12 shadow-sm border border-gray-100 dark:border-gray-800 flex flex-col md:flex-row items-center justify-between gap-12">
+        <div className="bg-surface-light dark:bg-surface-dark rounded-lg p-6 sm:p-8 md:p-12 shadow-sm border border-gray-100 dark:border-gray-800 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
           <div className="flex-1 text-center md:text-left">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-6">
               Visit Our Sanctuary
             </h2>
             <div className="space-y-6">

@@ -10,7 +10,7 @@ export default function Hero() {
           loading="eager"
           decoding="async"
           fetchPriority="high"
-          className="w-full h-auto object-cover max-h-[500px] shadow-sm"
+          className="w-full h-[45vh] min-h-[280px] sm:h-auto object-cover object-center sm:max-h-[500px] shadow-sm"
         />
       </div>
     </section>

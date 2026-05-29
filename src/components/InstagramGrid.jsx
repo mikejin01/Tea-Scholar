@@ -3,18 +3,21 @@ import Icon from "./Icon.jsx";
 
 export default function InstagramGrid() {
   return (
-    <section className="py-16 bg-white dark:bg-surface-dark border-t border-b border-gray-100 dark:border-gray-800 transition-colors duration-300">
+    <section className="py-12 sm:py-16 bg-white dark:bg-surface-dark border-t border-b border-gray-100 dark:border-gray-800 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white flex items-center gap-2">
+        <div className="flex items-center justify-between mb-6 sm:mb-8">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white flex items-center gap-2">
             <Icon name="photo_camera" className="text-primary" />
             @TeaScholar
           </h2>
-          <a className="text-primary font-medium hover:underline flex items-center gap-1" href="#">
+          <a
+            className="text-sm sm:text-base text-primary font-medium hover:underline flex items-center gap-1 whitespace-nowrap"
+            href="#"
+          >
             Follow Us <Icon name="arrow_forward" className="text-sm" />
           </a>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
           {INSTAGRAM.map((src) => (
             <a
               key={src}

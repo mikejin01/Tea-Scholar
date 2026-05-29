@@ -6,7 +6,7 @@ export default function InstagramGrid() {
     <section className="py-12 sm:py-16 bg-white dark:bg-surface-dark border-t border-b border-gray-100 dark:border-gray-800 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between mb-6 sm:mb-8">
-          <h2 className="text-2xl sm:text-3xl font-semibold tracking-wide text-gray-900 dark:text-white flex items-center gap-2">
+          <h2 className="font-sans text-xl sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white flex items-center gap-2">
             <Icon name="photo_camera" className="text-primary text-2xl" />
             @TeaScholar
           </h2>

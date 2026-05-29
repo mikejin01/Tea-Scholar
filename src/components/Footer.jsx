@@ -52,12 +52,12 @@ export default function Footer() {
             </p>
             <form className="flex mt-2" onSubmit={(e) => e.preventDefault()}>
               <input
-                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 bg-white dark:bg-surface-dark text-gray-900 dark:text-white rounded-l focus:ring-primary focus:border-primary sm:text-sm"
+                className="w-full pl-5 pr-4 py-2 border border-gray-300 dark:border-gray-700 bg-white dark:bg-surface-dark text-gray-900 dark:text-white rounded-l-full focus:ring-primary focus:border-primary sm:text-sm"
                 placeholder="Email address"
                 type="email"
               />
               <button
-                className="bg-primary text-white px-4 py-2 rounded-r hover:bg-opacity-90 transition-colors"
+                className="bg-primary text-white px-5 py-2 rounded-r-full hover:bg-opacity-90 transition-colors"
                 type="submit"
               >
                 Subscribe
@@ -67,7 +67,7 @@ export default function Footer() {
         </div>
         <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-gray-500 dark:text-gray-400">
-            © 2023 Tea Scholar. All rights reserved.
+            © 2026 Tea Scholar. All rights reserved.
           </p>
           <div className="flex space-x-6">
             <a className="text-gray-400 hover:text-gray-500 dark:hover:text-gray-300" href="#">

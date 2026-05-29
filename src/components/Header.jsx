@@ -57,7 +57,7 @@ export default function Header() {
               <Icon name="light_mode" className="dark-icon hidden dark:block" />
             </button>
             <a
-              className="hidden md:inline-flex items-center justify-center px-5 py-2.5 border border-transparent text-sm font-medium rounded text-white bg-primary hover:bg-opacity-90 transition-colors"
+              className="hidden md:inline-flex items-center justify-center px-5 py-2.5 border border-transparent text-sm font-medium rounded-full text-white bg-primary hover:bg-opacity-90 transition-colors"
               href="#"
             >
               Order Now
@@ -101,7 +101,7 @@ export default function Header() {
           <a
             href="#"
             onClick={() => setOpen(false)}
-            className="mt-5 inline-flex items-center justify-center px-5 py-3.5 text-base font-medium rounded text-white bg-primary hover:bg-opacity-90 transition-colors"
+            className="mt-5 inline-flex items-center justify-center px-5 py-3.5 text-base font-medium rounded-full text-white bg-primary hover:bg-opacity-90 transition-colors"
           >
             Order Now
           </a>

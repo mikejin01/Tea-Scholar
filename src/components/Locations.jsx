@@ -4,10 +4,10 @@ const DETAILS = [
   {
     icon: "location_on",
     title: "Flagship Store",
-    lines: ["123 Steep St,", "Tea District, NY 10001"],
+    lines: ["37-20 Prince St #1a,", "Flushing, NY 11354"],
   },
   { icon: "schedule", title: "Hours", lines: ["Mon - Sun: 11:00 AM - 10:00 PM"] },
-  { icon: "phone", title: "Contact", lines: ["(555) 123-4567"] },
+  { icon: "phone", title: "Contact", lines: ["(718) 799-0257"] },
 ];
 
 export default function Locations() {
@@ -47,8 +47,10 @@ export default function Locations() {
           </div>
           <div className="flex-shrink-0 w-full md:w-auto">
             <a
-              className="w-full md:w-auto inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded text-white bg-primary hover:bg-opacity-90 transition-colors shadow-sm"
-              href="#"
+              className="w-full md:w-auto inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-full text-white bg-primary hover:bg-opacity-90 transition-colors shadow-sm"
+              href="https://www.google.com/maps/search/?api=1&query=37-20+Prince+St+%231a+Flushing+NY+11354"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Get Directions
               <Icon name="directions" className="ml-2 text-sm" />
